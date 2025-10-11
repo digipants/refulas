@@ -11,46 +11,53 @@ const testimonials = [
   {
     name: "Jessica Miller",
     state: "California",
-    image: "https://randomuser.me/api/portraits/women/65.jpg",
+    image:
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80",
     rating: 5,
     text: "Refula replaced my cracked iPhone screen within 48 hours! The process was super easy and the support team was incredibly kind.",
   },
   {
     name: "Daniel Johnson",
     state: "Texas",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image:
+      "https://plus.unsplash.com/premium_photo-1658506615399-d1280310ad6c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fGFtZXJpY2FuJTIwbWVufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
     rating: 4,
     text: "Affordable plans and reliable service. I filed a claim for my laptop, and it was handled faster than I expected!",
   },
   {
     name: "Samantha Lee",
     state: "Florida",
-    image: "https://randomuser.me/api/portraits/women/12.jpg",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
     rating: 5,
     text: "I’ve used other protection services before, but Refula’s 24/7 support really stands out. They genuinely care about helping.",
   },
   {
     name: "Michael Carter",
     state: "New York",
-    image: "https://randomuser.me/api/portraits/men/45.jpg",
+    image:
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=400&q=80",
     rating: 5,
     text: "My tablet was accidentally dropped on vacation — Refula approved the claim instantly and sent a replacement. 10/10!",
   },
   {
     name: "Rachel Anderson",
     state: "Illinois",
-    image: "https://randomuser.me/api/portraits/women/29.jpg",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
     rating: 4,
     text: "The Family Shield plan is perfect for us! With three kids, we’ve already saved hundreds on accidental repairs.",
   },
   {
     name: "Ethan Ramirez",
     state: "Nevada",
-    image: "https://randomuser.me/api/portraits/men/60.jpg",
+    image:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
     rating: 5,
     text: "Super transparent pricing, no hidden fees. Their ‘Total Protect’ plan is the best value out there.",
   },
 ];
+
 
 export default function TestimonialsPage() {
   return (

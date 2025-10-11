@@ -8,46 +8,53 @@ export const metadata: Metadata = {
     "See what real customers across the U.S. say about Refula's trusted device protection — fast claims, quick replacements, and friendly 24/7 support.",
 };
 
+// ✅ Updated Unsplash image links (work in deployment)
 const testimonials = [
   {
     name: "Jessica Miller",
     state: "California",
-    image: "https://randomuser.me/api/portraits/women/65.jpg",
+    image:
+      "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80",
     rating: 5,
     text: "Refula replaced my cracked iPhone screen in just 2 days! Super easy process and their support team was so helpful.",
   },
   {
     name: "Daniel Johnson",
     state: "Texas",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image:
+      "https://plus.unsplash.com/premium_photo-1658506615399-d1280310ad6c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fGFtZXJpY2FuJTIwbWVufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
     rating: 5,
     text: "Best experience ever! Their claim process is transparent, and I got a replacement laptop shipped overnight.",
   },
   {
     name: "Samantha Lee",
     state: "Florida",
-    image: "https://randomuser.me/api/portraits/women/12.jpg",
+    image:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
     rating: 4,
     text: "Customer service is top-notch. They walked me through every step when I dropped my tablet.",
   },
   {
     name: "Michael Carter",
     state: "New York",
-    image: "https://randomuser.me/api/portraits/men/45.jpg",
+    image:
+      "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=400&q=80",
     rating: 5,
     text: "My gaming console was repaired within 72 hours. Refula delivers exactly what they promise!",
   },
   {
     name: "Rachel Anderson",
     state: "Illinois",
-    image: "https://randomuser.me/api/portraits/women/29.jpg",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
     rating: 5,
     text: "The Family Shield plan covers all of our devices — it’s a lifesaver with three kids in the house.",
   },
   {
     name: "Ethan Ramirez",
     state: "Nevada",
-    image: "https://randomuser.me/api/portraits/men/60.jpg",
+    image:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
     rating: 4,
     text: "Affordable and straightforward. No hidden fees, no long wait times — exactly what I wanted.",
   },
@@ -78,7 +85,14 @@ export default function TestimonialsPage() {
               {/* Avatar */}
               <div className="flex justify-center mb-4">
                 <div className="relative w-20 h-20 rounded-full overflow-hidden ring-4 ring-blue-100 shadow-md">
-                  <Image src={t.image} alt={t.name} fill className="object-cover" />
+                  <Image
+                    src={t.image}
+                    alt={t.name}
+                    fill
+                    className="object-cover"
+                    sizes="80px"
+                    priority
+                  />
                 </div>
               </div>
 
