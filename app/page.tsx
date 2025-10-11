@@ -6,7 +6,7 @@ import PlansPreview from "./components/PlansPreview";
 import TestimonialsPage from "./components/Testimonials";
 
 export default function Home() {
-  // Motion Variants
+  // Animation Variants
   const fadeInUp = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 },
@@ -20,13 +20,15 @@ export default function Home() {
   const transition = { duration: 0.6, ease: "easeOut" as const };
 
   return (
-    <main className="overflow-hidden">
+    // ✅ Remove overflow-hidden to allow scroll-based triggers
+    <main className="relative bg-white">
       {/* HERO SECTION */}
       <motion.section
         initial="hidden"
         animate="visible"
         variants={fadeInUp}
         transition={{ ...transition, duration: 0.8 }}
+        className="overflow-x-hidden"
       >
         <Hero />
       </motion.section>
@@ -35,9 +37,10 @@ export default function Home() {
       <motion.section
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.2 }} // ✅ triggers on smaller viewports
         variants={fadeInUp}
         transition={{ ...transition, delay: 0.1 }}
+        className="overflow-x-hidden"
       >
         <PlansPreview />
       </motion.section>
@@ -46,9 +49,10 @@ export default function Home() {
       <motion.section
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.2 }} // ✅ keep visible when scrolling on mobile
         variants={fadeIn}
         transition={{ ...transition, delay: 0.2 }}
+        className="overflow-x-hidden"
       >
         <TestimonialsPage />
       </motion.section>
