@@ -17,7 +17,7 @@ export default function Home() {
     visible: { opacity: 1 },
   };
 
-  const transition = { duration: 0.6, ease: "easeOut" };
+  const transition = { duration: 0.6, ease: "easeOut" as const };
 
   return (
     <main className="overflow-hidden">
