@@ -14,8 +14,8 @@ export default function Footer() {
             Refula
           </h3>
           <p className="text-gray-600 mt-3 text-sm leading-relaxed max-w-xs">
-            Reliable U.S.-based protection for all your devices. Fast replacements,
-            trusted coverage, and friendly 24/7 support.
+            Reliable U.S.-based protection for all your devices. Fast
+            replacements, trusted coverage, and friendly 24/7 support.
           </p>
           <div className="mt-4 space-y-2 text-sm">
             <a
@@ -30,14 +30,16 @@ export default function Footer() {
               className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
             >
               <Phone className="h-4 w-4 text-blue-600" />
-              (833) 921-5472
+              (833) 224-9359
             </a>
           </div>
         </div>
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-semibold text-gray-900 text-lg mb-3">Quick Links</h4>
+          <h4 className="font-semibold text-gray-900 text-lg mb-3">
+            Quick Links
+          </h4>
           <ul className="space-y-2 text-sm">
             <li>
               <Link href="/" className="hover:text-blue-600 transition">
@@ -50,7 +52,10 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/testimonials" className="hover:text-blue-600 transition">
+              <Link
+                href="/testimonials"
+                className="hover:text-blue-600 transition"
+              >
                 Testimonials
               </Link>
             </li>
@@ -78,7 +83,8 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-gray-200 py-6 text-center text-xs text-gray-500 bg-white/60 backdrop-blur-sm">
         © {new Date().getFullYear()}{" "}
-        <span className="font-semibold text-blue-700">Refula</span>. All rights reserved.  
+        <span className="font-semibold text-blue-700">Refula</span>. All rights
+        reserved.
         <span className="block mt-1 text-gray-400">
           Coverage availability and features may vary by state.
         </span>
