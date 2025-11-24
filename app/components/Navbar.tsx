@@ -65,7 +65,7 @@ export default function Navbar() {
 
           {/* Phone Button (Desktop) */}
           <a
-            href="tel:8339215472"
+            href="tel:(844) 587-5473"
             className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-semibold shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300"
           >
             <Phone className="h-4 w-4" />
@@ -107,7 +107,7 @@ export default function Navbar() {
             ))}
 
             <a
-              href="tel:8339215472"
+              href="tel:(844) 587-5473"
               onClick={() => setOpen(false)}
               className="flex items-center gap-2 text-blue-700 font-medium mt-3 bg-blue-50 border border-blue-100 py-2 px-4 rounded-full hover:bg-blue-100 transition"
             >

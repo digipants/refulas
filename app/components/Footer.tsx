@@ -26,7 +26,7 @@ export default function Footer() {
               support@Refula.com
             </a>
             <a
-              href="tel:8339215472"
+              href="tel:(844) 587-5473"
               className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
             >
               <Phone className="h-4 w-4 text-blue-600" />
