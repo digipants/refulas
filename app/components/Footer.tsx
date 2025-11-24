@@ -30,7 +30,7 @@ export default function Footer() {
               className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
             >
               <Phone className="h-4 w-4 text-blue-600" />
-              (833) 921-5472
+              (844) 587-5473
             </a>
           </div>
         </div>
